@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../assets/styles/login.css">
+    <script type="module" src="login.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1 class="center-title">Login</h1>
+            <img src="../assets/image/login.png" alt="login-img" class="login-img">
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <section class="form-section">
+                <form action="dashboard.html" method="post" class="auth-form">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+
+                    <button type="submit" class="submit-btn" id="submit">Login</button>
+                </form>
+                <p class="switch-auth">
+                    Belum punya akun? <a href="register.html">Daftar</a>
+                    
+                </p>
+                <p class="switch-auth">
+                    Ingin kembali ke web tanpa login? <a href="../index.html">Kembali</a>
+                </p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

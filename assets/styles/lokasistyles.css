@@ -1,0 +1,121 @@
+/* Container */
+.container {
+   max-width: 480px;
+   margin: 0 auto;
+   background: #fff;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   overflow-y: auto;
+}
+
+/* Header */
+header {
+   display: flex;
+   align-items: center;
+   padding: 10px 20px;
+   background-color: #f1f1f1;
+   position: sticky;
+   top: 0;
+   z-index: 10;
+}
+
+.header-left {
+   display: flex;
+   align-items: center;
+}
+
+.back-btn {
+   font-size: 20px;
+   text-decoration: none;
+   color: #333;
+   margin-right: 10px;
+}
+
+.title {
+   font-size: 16px;
+   font-weight: bold;
+   color: #2d6a4f;
+}
+
+/* Location Image Section */
+.location-image img {
+   width: 100%;
+   height: auto;
+   display: block;
+}
+
+/* Land Selection */
+.land-selection {
+   padding: 20px;
+}
+
+.land-card {
+   display: flex;
+   align-items: center;
+   background: #d4ead7;
+   padding: 15px;
+   border-radius: 10px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   margin-bottom: 15px;
+}
+
+.land-icon img {
+   width: 50px;
+   height: 50px;
+   object-fit: contain;
+   margin-right: 15px;
+}
+
+.land-info p {
+   font-size: 14px;
+   font-weight: bold;
+   margin: 0;
+   color: #333;
+}
+
+.land-info select {
+   margin-top: 5px;
+   padding: 5px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 12px;
+   width: 100%;
+}
+
+.delete-btn {
+   background: #ff6b6b;
+   color: white;
+   font-size: 16px;
+   padding: 5px 10px;
+   border: none;
+   border-radius: 5px;
+   margin-left: auto;
+   cursor: pointer;
+}
+
+.delete-btn:hover {
+   background: #d9534f;
+}
+
+/* Finish Button */
+.finish-btn {
+   background: #52b788;
+   color: white;
+   width: calc(100% - 40px);
+   margin: 0 20px 20px;
+   padding: 10px 0;
+   border: none;
+   border-radius: 10px;
+   font-size: 16px;
+   text-align: center;
+   cursor: pointer;
+}
+
+.finish-btn:hover {
+   background: #40916c;
+}

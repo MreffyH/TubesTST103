@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f5;
+  color: #333;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Enable scrolling */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #d4ead7;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left .logo {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.header-left .title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2d6a4f;
+}
+
+.user-icon {
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+}
+
+.weather {
+  background: linear-gradient(135deg, #94d2bd, #52b788);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 15px;
+  position: relative;
+}
+
+.weather h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.weather p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.weather-icon img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+}
+
+.add-land-btn {
+  background: #52b788;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-land-btn:hover {
+  background: #40916c;
+}
+
+.main-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.feature-card {
+  text-align: center;
+  background: #d4ead7;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.feature-card button {
+  background: #52b788;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.feature-card img {
+  width: 50px; 
+  height: 50px; 
+  object-fit: contain; 
+  margin-bottom: 10px; 
+}
+
+
+.feature-card button:hover {
+  background: #40916c;
+}
+
+footer .nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background: #f1f1f1;
+}
+
+footer .nav button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #555;
+}
+
+footer .nav button:hover {
+  color: #2d6a4f;
+}
