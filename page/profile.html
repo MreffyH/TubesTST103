@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREENGROW - My Profile</title>
+    <link rel="stylesheet" href="style/profile.css">
+    <script type="module" src="../auth/act/logout.js" defer></script>
+    <script type="module" src="../auth/act/session.js" defer></script>
+    <script type="module" src="act/profile.js" defer></script>
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>My Profile</h1>
+        </header>
+
+        <main>
+            <!-- Logged out state -->
+            <div id="logged-out-state"  class="hidden">
+                <p class="text-center">Please login or register to access your profile</p>
+                <button class="btn btn-primary" onclick="location.href='../auth/login.html'">Login</button>
+                <button class="btn btn-secondary" onclick="location.href='../auth/register.html'">Register</button>
+            </div>
+
+            <!-- Logged in state -->
+            <div id="logged-in-state">
+                <div class="profile-header">
+                    <div class="profile-info">
+                        <h2>Login User</h2>
+                        <p class="email" id="user-email">user@gmail.com</p>
+                    </div>
+                    <button class="btn btn-edit">Edit Profile</button>
+                </div>
+
+                <!-- Settings section -->
+                <section class="settings">
+                    <h3>Settings</h3>
+                    <div class="settings-list">
+                        <div class="settings-item">
+                            <span class="icon-shield"></span>
+                            <span>Security</span>
+                            <span class="icon-chevron-right"></span>
+                        </div>
+                        <div class="settings-item">
+                            <span class="icon-help-circle"></span>
+                            <span>Help Center</span>
+                            <span class="icon-chevron-right"></span>
+                        </div>
+                        <div class="settings-item">
+                            <span class="icon-lock"></span>
+                            <span>Privacy</span>
+                            <span class="icon-chevron-right"></span>
+                        </div>
+                        <div class="settings-item" id="logout-button">
+                            <span class="icon-log-out"></span>
+                            <span>Logout</span>
+                            <span class="icon-chevron-right"></span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <nav class="bottom-nav">
+            <a href="../index.html">
+                Home
+            </a>
+            <a href="jadwal.html">
+                Schedule
+            </a>
+            <a href="profile.html" class="active">
+                Profile
+            </a>
+        </nav>
+    </div>
+
+</body>
+</html>
+

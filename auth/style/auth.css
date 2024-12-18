@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.app {
+    max-width: 390px;
+    height: 844px;
+    margin: 0 auto;
+    background-color: #fff;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #3fd48c;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.date-time {
+    font-size: 0.8rem;
+}
+
+main {
+    padding: 1rem;
+    flex: 1;
+}
+
+.hero {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.hero h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 0.9rem;
+}
+
+.greeting {
+    margin-bottom: 1rem;
+}
+
+.greeting h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.search-form form,
+.auth-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.form-group select,
+.form-group input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #3fd48c;
+    color: #fff;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.accommodation-types {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.type img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #3fd48c;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: auto;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+.auth-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.auth-form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.auth-link {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.auth-link a {
+    color: #3fd48c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+.home-link {
+    text-align: left;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.home-link a {
+    color: #3fd48c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-link a:hover {
+    text-decoration: underline;
+}

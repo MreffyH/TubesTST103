@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREENGROW Login</title>
+    <link rel="stylesheet" href="style/auth.css">
+    <script type="module" src="act/login.js" defer></script>
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>GREENGROW</h1>
+        </header>
+        <main>
+            <section class="auth-form">
+                <p class="home-link"><a href="../index.html">home ></a></p>
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" id="submit">Login</button>
+                </form>
+                <p class="auth-link">Don't have an account? <a href="register.html">Register</a></p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 GREENGROW.com • All Rights Reserved</p>
+            <a href="https://GREENGROW.com">https://GREENGROW.com</a>
+        </footer>
+    </div>
+    <script src="act/auth.js"></script>
+</body>
+</html>
+
