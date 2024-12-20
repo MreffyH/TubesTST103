@@ -5,14 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     addLandBtn.addEventListener('click', function() {
         window.location.href = 'page/lokasi.html';
-        // In a real app, you would use: window.location.href = 'add-land.html';
     });
 
     featureCards.forEach(card => {
         card.addEventListener('click', function(e) {
             e.preventDefault();
             window.location.href = this.getAttribute('href');
-            // In a real app, you would use: window.location.href = this.getAttribute('href');
         });
     });
 
@@ -20,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
         item.addEventListener('click', function(e) {
             e.preventDefault();
             window.location.href = this.getAttribute('href');
-            // In a real app, you would use: window.location.href = this.getAttribute('href');
         });
     });
 });

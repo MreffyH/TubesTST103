@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Auth State Change
     onAuthStateChanged(auth, user => {
         if (user) {
-            // User is signed in
+            // The user that signed in
             const userId = user.uid;
             
             loadScheduleFromCache(userId);
@@ -49,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const plantingDateObj = new Date(plantingDate);
         const schedule = [];
     
-        // Calculate the schedule for a year
         const wateringInterval = 2; // Every 2 days
         const fertilizationInterval = 30; // Every 30 days
         const harvestDate = new Date(plantingDateObj);
@@ -118,15 +117,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 const data = snapshot.val();
                 console.log("Data loaded from Firebase:", data);
     
-                // Simpan data ke localStorage
                 localStorage.setItem(`schedule_${userId}`, JSON.stringify(data));
     
-                // Tampilkan data di kalender
+                // Show calendar events
                 const scheduleEntries = Object.values(data).flatMap(entry => entry.schedule);
                 calendar.removeAllEvents();
                 calendar.addEventSource(scheduleEntries);
     
-                // Tampilkan aktivitas di daftar
+                // Show activity details
                 displayActivityDetails(data);
             } else {
                 console.log("No schedule data available.");
@@ -137,9 +135,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to display activity details
     function displayActivityDetails(data) {
         const activityList = document.querySelector('.activity-list');
-        activityList.innerHTML = ''; // Clear previous items
+        activityList.innerHTML = ''; 
 
-        const scheduleEntries = Object.values(data); // Get all schedule entries
+        const scheduleEntries = Object.values(data); 
 
         scheduleEntries.forEach(entry => {
             entry.schedule.forEach(activity => {
@@ -159,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Fungsi untuk memuat data dari localStorage jika ada
+    // Function to load schedule from cache
     function loadScheduleFromCache(userId) {
         const cachedData = localStorage.getItem(`schedule_${userId}`);
         if (cachedData) {

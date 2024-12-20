@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const password = document.getElementById('password').value;
 
             if (email && password) {
-                alert('Login successful!'); // Replace with actual login logic
+                alert('Login successful!'); 
             } else {
                 alert('Please fill in all fields.');
             }
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (email && password && confirmPassword) {
                 if (password === confirmPassword) {
-                    alert('Registration successful!'); // Replace with actual registration logic
+                    alert('Registration successful!'); 
                 } else {
                     alert('Passwords do not match.');
                 }

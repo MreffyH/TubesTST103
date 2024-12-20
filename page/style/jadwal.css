@@ -50,11 +50,11 @@ h1 {
     border: 2px solid #9ae6b4;
     background-color: white;
     margin-bottom: 15px;
-    padding: 10px; /* Updated padding */
+    padding: 10px; 
 }
 
 #calendar {
-    height: 610px; /* Increased from 350px */
+    height: 610px; 
 }
 
 .activity-details {
@@ -106,18 +106,18 @@ h1 {
 }
 
 .fc-toolbar {
-    margin-bottom: 1.5em !important; /* Updated margin */
+    margin-bottom: 1.5em !important; 
 }
 
 .fc-toolbar-title {
-    font-size: 18px !important; /* Updated font size */
-    font-weight: bold; /* Added font weight */
+    font-size: 18px !important; 
+    font-weight: bold; 
 }
 
 .fc-button {
     background-color: #2f855a !important;
     border-color: #2f855a !important;
-    padding: 6px 12px !important; /* Updated padding */
+    padding: 6px 12px !important; 
 }
 
 .fc-event {
@@ -130,18 +130,15 @@ h1 {
     background-color: #48bb78;
 }
 
-/* Adjust calendar day cell heights */
 .fc .fc-daygrid-day {
-    height: 60px !important; /* Added height adjustment */
+    height: 60px !important; 
 }
 
-/* Adjust day header styling */
 .fc .fc-col-header-cell {
     padding: 8px 0 !important;
-    background-color: #f7fafc; /* Added background color */
+    background-color: #f7fafc; 
 }
 
-/* Bottom Navigation Styles */
 .bottom-nav {
     display: flex;
     justify-content: space-around;
