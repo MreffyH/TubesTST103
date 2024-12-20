@@ -16,6 +16,5 @@ submit.addEventListener("click", function(event) {
         const errorCode = error.code;
         const errorMessage = error.message;
         alert(errorMessage)
-    // ..
     });
 });
